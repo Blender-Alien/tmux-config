@@ -1,0 +1,8 @@
+#!/bin/sh
+
+cd projects/chinstrap3d
+tmux new-session -d -s space -n 'bash'
+tmux new-window -n 'nvim'
+tmux new-window -n 'compile'
+tmux attach -t space
+tmux source-file ~/.tmux.conf
